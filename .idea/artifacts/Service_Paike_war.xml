@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Service-Paike:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Service-Paike</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Service-Paike-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Service-Paike:war exploded" />
+    </root>
+  </artifact>
+</component>
