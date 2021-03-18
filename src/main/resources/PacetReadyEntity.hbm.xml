@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ir.maktab.model.services.cfg.xml.PacetReadyEntity" table="pacet ready" schema="services">
+        <composite-id mapped="true" class="ir.maktab.model.services.cfg.xml.PacetReadyEntityPK">
+            <key-property name="shomarePaygiry">
+                <column name="shomare paygiry" sql-type="int(11)"/>
+            </key-property>
+            <key-property name="nameCostomer">
+                <column name="name costomer" sql-type="varchar(50)" length="50"/>
+            </key-property>
+        </composite-id>
+        <property name="typeOgHaml">
+            <column name="type og haml" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="firstAdress">
+            <column name="first adress" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="endAddress">
+            <column name="end address" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="waighte">
+            <column name="waighte" sql-type="float" precision="-1"/>
+        </property>
+        <property name="typeOfPacket">
+            <column name="type of packet" sql-type="varchar(50)" length="50"/>
+        </property>
+    </class>
+</hibernate-mapping>

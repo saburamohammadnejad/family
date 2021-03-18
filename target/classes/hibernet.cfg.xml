@@ -1,0 +1,13 @@
+<hibernate-configuration >
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.url">jdbc"mysql://localhost:3306/pake_services</property>
+   <property name="connection.username">root</property>
+    <property name="connection.password">123</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <mapping>
+            <class>ir.maktab.model.Aplication</class>
+        </mapping>
+
+    </session-factory>
+</hibernate-configuration>

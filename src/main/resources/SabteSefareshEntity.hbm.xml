@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ir.maktab.model.services.cfg.xml.SabteSefareshEntity" table="sabte sefaresh" schema="services">
+        <id name="shomarepaygiry">
+            <column name="shomarepaygiry" sql-type="int(11)"/>
+        </id>
+        <property name="employeeid">
+            <column name="employeeid" sql-type="int(11)"/>
+        </property>
+        <property name="dateTahvil">
+            <column name="date tahvil" sql-type="timestamp"/>
+        </property>
+    </class>
+</hibernate-mapping>

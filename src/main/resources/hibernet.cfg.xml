@@ -1,0 +1,36 @@
+<hibernate-configuration >
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/services</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+        <mapping>
+            <class>ir.maktab.model.Aplication</class>
+        </mapping>
+        <mapping resource="ApplicationpackeEntity.hbm.xml"/>
+        <mapping class="ir.maktab.model.services.cfg.xml.ApplicationpackeEntity"/>
+        <mapping resource="CosromerEntity.hbm.xml"/>
+        <mapping class="ir.maktab.model.services.cfg.xml.CosromerEntity"/>
+        <mapping resource="EmployeeEntity.hbm.xml"/>
+        <mapping class="ir.maktab.model.services.cfg.xml.EmployeeEntity"/>
+        <mapping resource="GirandehEntity.hbm.xml"/>
+        <mapping class="ir.maktab.model.services.cfg.xml.GirandehEntity"/>
+        <mapping class="ir.maktab.model.services.cfg.xml.ManegerEntity"/>
+        <mapping resource="ManegerEntity.hbm.xml"/>
+        <mapping resource="OrderPendingEntity.hbm.xml"/>
+        <mapping class="ir.maktab.model.services.cfg.xml.OrderPendingEntity"/>
+        <mapping resource="OrdermoreTackEntity.hbm.xml"/>
+        <mapping class="ir.maktab.model.services.cfg.xml.OrdermoreTackEntity"/>
+        <mapping resource="PacetReadyEntity.hbm.xml"/>
+        <mapping class="ir.maktab.model.services.cfg.xml.PacetReadyEntity"/>
+        <mapping resource="PacketHistoryEntity.hbm.xml"/>
+        <mapping class="ir.maktab.model.services.cfg.xml.PacketHistoryEntity"/>
+        <mapping resource="SabteSefareshEntity.hbm.xml"/>
+        <mapping class="ir.maktab.model.services.cfg.xml.SabteSefareshEntity"/>
+        <mapping class="ir.maktab.model.services.cfg.xml.SendingEntity"/>
+        <mapping resource="SendingEntity.hbm.xml"/>
+        <mapping resource="TypeOfSendingEntity.hbm.xml"/>
+        <mapping class="ir.maktab.model.services.cfg.xml.TypeOfSendingEntity"/>
+
+    </session-factory>
+</hibernate-configuration>

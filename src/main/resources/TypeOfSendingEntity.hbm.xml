@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ir.maktab.model.services.cfg.xml.TypeOfSendingEntity" table="type of sending" schema="services">
+        <composite-id mapped="true" class="ir.maktab.model.services.cfg.xml.TypeOfSendingEntityPK">
+            <key-property name="shomarepagiry">
+                <column name="shomarepagiry" sql-type="int(11)"/>
+            </key-property>
+            <key-property name="employeeName">
+                <column name="employee name" sql-type="varchar(50)" length="50"/>
+            </key-property>
+        </composite-id>
+        <property name="silver">
+            <column name="silver" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="gold">
+            <column name="gold" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="permiume">
+            <column name="permiume" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="price">
+            <column name="price" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>
